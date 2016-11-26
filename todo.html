@@ -13,41 +13,55 @@ footer{
 
 div{
   line-height: 300%;
+
 }
 
 #topic{font-size: 50px;
 }
+textarea{
+  resize:vertical;
+  width:calc(100% - 100px);
+}
+.title{
+  width:calc(100% - 120px);
+}
+
 </style>
+
+<meta charset= "utf-8"/>
 
 </head>
 
 <body>
-<div id="topic">Things to do today</div>
-<div><input type="checkbox"/>1.____________________________________________</div>
+<div id="topic">Things to do</div>
+<div>
+<form action="getform.php" method="get">
+        <!-- <label>E-mail: <input type="email"></label><br/>
+        <label>Please re-enter your E-mail:<input type="email"></label><br/> -->
+<input type="submit" value="Submit">
+</form>
+</div>
 
-<div><input type="checkbox"/>2.____________________________________________</div>
+<ol id="trythisout">
 
-<div><input type="checkbox"/>3.____________________________________________</div>
+   <!-- <li class="task"><input type="checkbox" class="mark"/><input type="text" class="title"/><br/><br/><textarea class="memo">Memo</textarea></li> -->
+<!-- <li><input type="checkbox"/><input type="text" class="title" value="Anything to do?"/><br/><br/><textarea>Memo</textarea></li>
 
-<div><input type="checkbox"/>4.____________________________________________</div>
+<li><input type="checkbox"/><input type="text"class="title" value="Anything to do?"/><br/><br/><textarea>Memo</textarea></li>
 
-<div><input type="checkbox"/>5.____________________________________________</div>
+<li><input type="checkbox"/><input type="text" class="title" value="Anything to do?"/><br/><br/><textarea>Memo</textarea></li> -->
+</ol>
+<footer>
+<button id="add">Add new item</button>
+</footer>
 
-<div><input type="checkbox"/>6.____________________________________________</div>
-
-<div><input type="checkbox"/>7.____________________________________________</div>
-
-<div><input type="checkbox"/>8.____________________________________________</div>
-
-<div><input type="checkbox"/>9.____________________________________________</div>
-
-<div><input type="checkbox"/>10.____________________________________________</div>
-
+<script src= "todo.js">
+</script>
+<script src= "sugar.js">
+</script>
 
 </body>
 
-<footer>
-<button>Refresh</button>
-</footer>
+
 
 </html>
